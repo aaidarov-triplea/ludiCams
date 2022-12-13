@@ -1,0 +1,80 @@
+/* =====header style=============== */
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 61px 0 53px;
+    background-color: #fff;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 13px;
+}
+.logo-title {
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 39px;
+}
+
+.header__online {
+    display: flex;
+    align-items: center;
+}
+.online-status {
+    width: 10px;
+    height: 10px;
+    background-color: #8BB47D;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.header__online > p {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.coin-logo {
+    display: flex;
+    align-items: center;
+}
+
+.coin-title {
+    margin-left: 6px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.header__coin > a {
+    font-size: 16px;
+    line-height: 19px;
+    color: #52719F;
+}
+.header__coin > a:hover {
+    color: #3C3C3C;
+}
+.header__coin > a:active {
+    color: #8BB47D;
+}
+/*============= Adaptive styles ===============*/
+@media screen and (max-width: 1023px) {
+    .header__inner {
+        padding: 0 16px 0 19px;
+    }
+    .logo-title {
+        font-size: 28px;
+        line-height: 35px;
+    }
+}
+/* ========to Phones ======================*/
+@media screen and (max-width: 415px) {
+    .logo-title {
+        display: none;
+    }
+    .logo {
+        margin-right: 28px;
+    }
+}

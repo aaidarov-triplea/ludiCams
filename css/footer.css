@@ -1,0 +1,86 @@
+/* =====header style=============== */
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 128px;
+    padding: 0 61px 0 53px;
+    background-color: #fff;
+}
+.footer__logo {
+    display: flex;
+    align-items: center;
+}
+.logo {
+    margin-right: 13px;
+}
+.footer-logo-title {
+    font-family: 'Orbitron', sans-serif;
+    margin-right: 39px;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 74px;
+}
+li:last-child {
+    margin-right: 0;
+}
+li > a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    color:  #3C3C3C;
+}
+li > a:hover {
+    text-decoration: underline;
+}
+li > a:active {
+    text-decoration: underline;
+    color: #8BB47D;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.01px;
+    color: #989898;
+
+}
+
+/*=======Adavtive to Tablate===============*/
+@media screen and (max-width: 720px) {
+    .footer__inner {
+        height: 250px;
+        padding: 0 16px 0 19px;
+    }
+
+    ul {
+        display: block;
+    }
+    li {
+        margin-bottom: 23px;
+    }
+    li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*=======Adavtive to Phone===============*/
+@media screen and (max-width: 368px) {
+    .footer__inner {
+        height: 332px;
+        padding: 0 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    nav {
+        margin: 42px 0 40px 0;
+    }
+}
