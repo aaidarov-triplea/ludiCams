@@ -8,13 +8,16 @@
 .card-inner {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 60px 0 53px;
+    padding: 0 59px 0 60px;
 }
 .card-item {
-    height: 100%;
+    /* height: 393px; */
     width: calc(100% / 4 - 26.5px);
-    margin-right: 35px;
+    margin:0 35px 40px 0;
     background-color: #fff;
+}
+.card-item:nth-child(4){
+    margin-right: 0;
 }
 .card-item:nth-last-child(1){
     margin-right: 0;
@@ -54,19 +57,33 @@
 .card-body {
     display: flex;
     margin-top: 19px;
-    justify-content: space-between;
 }
 .card-info {
-    width: 214px;
-    height: 100%;
+    width: 100%;
+    height: 214px;
+    margin-left: 15px;
+    padding-right: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.avatar {
+    margin-left: 15px;
+}
+.avatar > img {
+    width: 40px;
+    height: 40px;
+}
+.info-body {
+    display: flex;
+    flex-direction: column;
+}
+
 .info-person {
     font-weight: 700;
     font-size: 12px;
 }
-.card-info > h5 {
+.info-body > h5 {
     font-weight: 700;
     font-size: 18px;
     padding: 7px 20px 6px 0;
@@ -75,9 +92,8 @@
     font-weight: 400;
     font-size: 14px;
     padding-right: 20px;
-    padding-bottom: 33px;
 }
-
+/* ==========button styles======== */
 .btn {
     border: none;
     cursor: pointer;
@@ -86,7 +102,7 @@
     color: #fff;
     text-transform: uppercase;
     border-radius: 2px;
-    margin: 18px 20px 16px 0;
+    margin: 18px 0 16px 0;
 }
 .btn-vebinar{
     background-color: #DFAD63;
@@ -147,14 +163,15 @@
     cursor: pointer;
 
 }
+/* ==========button styles end======== */
 
 /*=======Adavtive to Tablate===============*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     .card-inner {
         padding: 16px;
     }
     .card-item {
-        margin-right: 16px;
+        margin: 0 16px 16px 0;
         width: calc(50% - 8px);
     }
     .card-item:nth-child(2n) {
@@ -162,13 +179,17 @@
     }
 }
 /*=======Adavtive to Phone===============*/
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 540px) {
     .card-inner {
-        padding: 16px;
+        padding:0 16px 16px 16px;
     }
     .card-item {
         width: 100%;
         margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .card-item:last-child {
+        margin-bottom: 0;
     }
     .btn-page {
         width: 100%;

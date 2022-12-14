@@ -1,3 +1,7 @@
+.footer {
+    width: 100%;
+    background-color: #fff;
+}
 .footer__inner {
     display: flex;
     align-items: center;
@@ -53,7 +57,7 @@ li > a:active {
 }
 
 /*=======Adavtive to Tablate===============*/
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 820px) {
     .footer__inner {
         height: 250px;
         padding: 0 16px 0 19px;
@@ -71,7 +75,7 @@ li > a:active {
 }
 
 /*=======Adavtive to Phone===============*/
-@media screen and (max-width: 368px) {
+@media screen and (max-width: 540px) {
     .footer__inner {
         height: 332px;
         padding: 0 16px;

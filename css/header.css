@@ -1,4 +1,8 @@
 /* =====header style=============== */
+.header {
+    width: 100%;
+    background-color: #fff;
+}
 .header__inner {
     display: flex;
     align-items: center;
@@ -60,7 +64,7 @@
     color: #8BB47D;
 }
 /*============= Adaptive styles ===============*/
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 820px) {
     .header__inner {
         padding: 0 16px 0 19px;
     }
@@ -70,7 +74,7 @@
     }
 }
 /* ========to Phones ======================*/
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 540px) {
     .logo-title {
         display: none;
     }
